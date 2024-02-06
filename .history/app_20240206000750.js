@@ -20,15 +20,4 @@ imagen.alt="árbol de nodos";
 // 7- AGREGO ELEMENTOS AL CONTENEDOR
 contenedor.append(subtitulo,imagen)
 
-// 9- COPIA DEL CODIGO DESDE index.html
-{/* <div class="col">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top pt-2" src="./img/icono.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Esteban Gabbes</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                the card's content.</p>
-            <a href="#" class="btn btn-primary">Ver Perfil</a>
-        </div>
-    </div>
-</div> */}
+9- 

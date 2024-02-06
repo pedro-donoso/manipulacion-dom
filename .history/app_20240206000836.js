@@ -20,7 +20,8 @@ imagen.alt="árbol de nodos";
 // 7- AGREGO ELEMENTOS AL CONTENEDOR
 contenedor.append(subtitulo,imagen)
 
-// 9- COPIA DEL CODIGO DESDE index.html
+9- COPIA DEL CODIGO DESDE index.html
+
 {/* <div class="col">
     <div class="card" style="width: 18rem;">
         <img class="card-img-top pt-2" src="./img/icono.jpg" alt="Card image cap">
