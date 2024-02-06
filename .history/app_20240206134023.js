@@ -13,8 +13,10 @@ body.appendChild(subtitulo);
 
 // 6- AGREGO IMAGEN
 let imagen = document.createElement("img");
+
 imagen.src =
   "https://www.freecodecamp.org/news/content/images/2021/09/Document.jpg";
+  imagen.title = "Árbol de Nodos"
 imagen.width = "400";
 imagen.height = "300";
 imagen.alt = "árbol de nodos";

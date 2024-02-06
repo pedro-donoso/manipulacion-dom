@@ -15,7 +15,7 @@ body.appendChild(subtitulo);
 let imagen = document.createElement("img");
 imagen.src =
   "https://www.freecodecamp.org/news/content/images/2021/09/Document.jpg";
-imagen.width = "400";
+imagen.width = "420";
 imagen.height = "300";
 imagen.alt = "árbol de nodos";
 

@@ -2,7 +2,7 @@
 let contenedor = document.querySelector("#contenedor");
 
 // 3- CREAR ELEMENTO SUBTITULO Y LE AGREGO PROPIEDADES
-let subtitulo = document.createElement("h3");
+let subtitulo = document.createElement("h2");
 subtitulo.innerText = "Árbol de nodos";
 
 // 4- OBTENER EL CUERPO DEL DOCUMENTO
@@ -16,7 +16,6 @@ let imagen = document.createElement("img");
 imagen.src =
   "https://www.freecodecamp.org/news/content/images/2021/09/Document.jpg";
 imagen.width = "400";
-imagen.height = "300";
 imagen.alt = "árbol de nodos";
 
 // 7- AGREGO ELEMENTOS AL CONTENEDOR
@@ -72,13 +71,12 @@ const crearTarjeta = () => {
     let nombre = document.querySelector("#nombre").value;
     let usuario = document.querySelector("#usuario").value;
     let email = document.querySelector("#email").value;
-     let descripcion = document.querySelector("#descripcion").value;
+     let descripcion = document.querySelector("#des").value;
 
     // 23- LLAMO A LA CONSTANTE AUTOR
     autor.nombre = nombre;
     autor.usuario = usuario;
     autor.email = email;
-    autor.descripcion = descripcion;
 
     // 24- SE VUELVE A CREAR LA TARJETA CON LOS NUEVOS DATOS
     crearTarjeta();
