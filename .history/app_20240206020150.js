@@ -31,7 +31,7 @@ const autor = {
   imagen: "./img/icono.jpg",
 };
 
-// 19- Agrego const crearTarjeta y agrego todas las funciones del código
+// 20- Agrego const crearTarjeta y agrego todas las funciones del código
 const crearTarjeta = () => {
   // 9- CREO ESTRUCTURA DEL CODIGO
   let columnaTarjeta = document.createElement("div");
@@ -61,12 +61,10 @@ const crearTarjeta = () => {
     console.log(event);
     event.preventDefault();
   };
+
+ 
+  // 19- CAPTURO EVENTO CLIC DEL BOTON EN EL form MEDIANTE EL ID formulario
+  document
+    .getElementById("formulario")
+    .addEventListener("submit", modificarAutor);
 };
-
-// 18- CAPTURO EVENTO CLIC DEL BOTON EN EL form MEDIANTE EL ID formulario
-document
-  .getElementById("formulario")
-  .addEventListener("submit", modificarAutor);
-
-// 20- LLAMO A LA FUNCIÓN
-crearTarjeta();

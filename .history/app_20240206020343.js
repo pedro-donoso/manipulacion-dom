@@ -64,9 +64,8 @@ const crearTarjeta = () => {
 };
 
 // 18- CAPTURO EVENTO CLIC DEL BOTON EN EL form MEDIANTE EL ID formulario
-document
-  .getElementById("formulario")
-  .addEventListener("submit", modificarAutor);
+  document
+    .getElementById("formulario")
+    .addEventListener("submit", modificarAutor);
 
-// 20- LLAMO A LA FUNCIÓN
-crearTarjeta();
+    20

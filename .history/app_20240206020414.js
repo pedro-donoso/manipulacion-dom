@@ -69,4 +69,3 @@ document
   .addEventListener("submit", modificarAutor);
 
 // 20- LLAMO A LA FUNCIÓN
-crearTarjeta();
