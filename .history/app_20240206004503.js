@@ -51,5 +51,5 @@ let tarjetaAutor = ` <div class="card" style="width: 18rem;">
     // 12- AGREGO TEMPLATE STRING A columnaTarjeta (HIJO)
     columnaTarjeta.innerHTML = tarjetaAutor;
 
-    // 14- AGREGO columnaTarjeta AL CONTENEDOR (PADRE) MEDIANTE LA SELECCIÓN DEL ID #contenedor_tarjeta
+    // 14- AGREGO columnaTarjeta AL CONTENEDOR ()PADRE MEDIANTE LA SELECCIÓN DEL ID #contenedor_tarjeta
     document.querySelector("#contenedor_tarjeta").append(columnaTarjeta)

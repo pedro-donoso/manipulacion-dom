@@ -1,0 +1,23 @@
+// 2- CREO VARIABLE PARA MANIPULAR HTML
+let contenedor = document.querySelector("#contenedor");
+
+// 3- CREAR ELEMENTO SUBTITULO Y LE AGREGO PROPIEDADES
+let subtitulo = document.createElement("h2");
+subtitulo.innerText = "Árbol de nodos";
+
+// 4- OBTENER EL CUERPO DEL DOCUMENTO
+let body = document.body;
+
+// 5- AGREGAR EL NUEVO ELEMENTO AL CUERPO DEL DOCUMENTO
+body.appendChild(subtitulo);
+
+// 6- AGREGO IMAGEN
+let imagen = document.createElement("img");
+imagen.src="https://www.freecodecamp.org/news/content/images/2021/09/Document.jpg";
+imagen.width="400";
+imagen.alt="árbol de nodos";
+
+// 7- AGREGO ELEMENTOS AL CONTENEDOR
+contenedor.append(subtitulo,imagen)
+
+9- 

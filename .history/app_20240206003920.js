@@ -48,8 +48,7 @@ let tarjetaAutor = ` <div class="card" style="width: 18rem;">
         </div>
     </div>`;
 
-    // 12- AGREGO TEMPLATE STRING A columnaTarjeta (HIJO)
+    // 12- AGREGO TEMPLATE STRING A columnaTarjeta
     columnaTarjeta.innerHTML = tarjetaAutor;
 
-    // 14- AGREGO columnaTarjeta AL CONTENEDOR (PADRE) MEDIANTE LA SELECCIÓN DEL ID #contenedor_tarjeta
-    document.querySelector("#contenedor_tarjeta").append(columnaTarjeta)
+    13 
