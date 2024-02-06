@@ -33,14 +33,12 @@ columnaTarjeta.className='col'
 
 // 10- CREO TEMPLATE STRING DEL CONTENIDO DE LA TARJETA AUTOR
 // 14- AGREGO DATOS DEL CONSTRUCTOR (13)
-// 17- CREO EVENTO onclick
-// 19- LLAMAR A eventoClick CON event
 let tarjetaAutor = ` <div class="card" style="width: 18rem;">
         <img class="card-img-top pt-2" src="${autor.imagen}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">${autor.nombre}</h5>
             <p class="card-text">${autor.descripcion}</p>
-            <button class="btn btn-primary" onclick="eventoClick(event)">Ver Perfil</button>
+            <a href="#" class="btn btn-primary">Ver Perfil</a>
         </div>
     </div>`;
 
@@ -50,13 +48,5 @@ let tarjetaAutor = ` <div class="card" style="width: 18rem;">
     // 12- AGREGO columnaTarjeta AL CONTENEDOR (PADRE) MEDIANTE LA SELECCIÓN DEL ID #contenedor_tarjeta
     document.querySelector("#contenedor_tarjeta").append(columnaTarjeta)
 
-    // 16- Creo constante modificarAutor para agregarla al form en index.html, la función recibirá un evento
-    const modificarAutor=(event)=>{
-        console.log(event);
-        event.preventDefault();
-    }
-
-    // 18- CREO FUNCIÓN eventoClick RECIBIRÁ event DESDE form DEL ARCHIVO index.html
-    const eventoClick=(event)=>{
-        console.log(event);
-    }
+    // 16- Creo constante modificarAutor para agregarla al form, en index.html
+    const modificarAutor=
