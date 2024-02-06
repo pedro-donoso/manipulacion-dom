@@ -36,19 +36,15 @@
                 <!-- 15- AGREGO id PARA ESCUCHAR EVENTO CLICK -->
                 <form id="formulario">
                     <!-- 21- AGREGO ID DE CADA CAMPO -->
-                    <label class="pt-2">Tipo de Suscripción:</label>
-                    <select id="suscripcion" class="form-control mb-3">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="Suscripción Free">Suscripción Free</option>
-                        <option value="Suscripción Basica">Suscripcion Basica</option>
-                        <option value="Suscripción Experta">Suscripcion Experta</option>
-                    </select>
-                    <label>Nombre</label>
+                    <label class="pt-2">Nombre</label>
                     <input type="text" class="form-control mb-3" id="nombre" required>
-
-                    <label>Correo</label>
-                    <input type="email" class="form-control mb-3" id="email">
-                    
+                    <label>Tipo de Suscripción</label>
+                    <select id="suscripcion" class="form-control mb-3">
+                        <option disabled selected>Selecciona una Suscripción</option>
+                        <option value="Suscripción Free">Suscripción Free</option>
+                        <option value="Suscripción Basica">Suscripcion Basic</option>
+                        <option value="Suscripción Experta">Suscripcion Expert</option>
+                    </select>
                     <label>Descripcion</label>
                     <textarea rows="3" class="form-control mb-3" id="descripcion" required></textarea>
                     <div>
@@ -71,7 +67,7 @@
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <div class="d-flex flex-column">
-                                <span>Suscripción Basica</span>
+                                <span>Suscripción Basic</span>
                                 <small class="text-muted">Accesos a contenido</small>
                             </div>
                             <div>
@@ -80,7 +76,7 @@
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <div class="d-flex flex-column">
-                                <span>Suscripción Experta</span>
+                                <span>Suscripción Expert</span>
                                 <small class="text-muted">Accesos ilimitados</small>
                             </div>
                             <div>

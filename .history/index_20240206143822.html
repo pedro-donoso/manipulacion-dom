@@ -30,35 +30,31 @@
                 </p>
             </div>
         </div>
-        <div class="row justify-content-between pb-5">
+        <div class="row justify-content-between">
             <div class="col-4 col-md-4 bg-warning rounded p-4">
-                <h5><strong>Cambia los datos de la Tarjeta</strong></h5>
+                <h4>Cambia los datos de la Tarjeta</h4>
                 <!-- 15- AGREGO id PARA ESCUCHAR EVENTO CLICK -->
                 <form id="formulario">
                     <!-- 21- AGREGO ID DE CADA CAMPO -->
-                    <label class="pt-2">Tipo de Suscripción:</label>
+                    <label>Nombre</label>
+                    <input type="text" class="form-control mb-3" id="nombre">
+                    <label>Tipo de Suscripción</label>
                     <select id="suscripcion" class="form-control mb-3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="Suscripción Free">Suscripción Free</option>
-                        <option value="Suscripción Basica">Suscripcion Basica</option>
-                        <option value="Suscripción Experta">Suscripcion Experta</option>
+                        <option value="Suscripción Basic">Suscripcion Basic</option>
+                        <option value="Suscripción Expert">Suscripcion Expert</option>
                     </select>
-                    <label>Nombre</label>
-                    <input type="text" class="form-control mb-3" id="nombre" required>
-
-                    <label>Correo</label>
-                    <input type="email" class="form-control mb-3" id="email">
-                    
                     <label>Descripcion</label>
-                    <textarea rows="3" class="form-control mb-3" id="descripcion" required></textarea>
+                    <textarea rows="3" class="form-control mb-3" id="descripcion"></textarea>
                     <div>
-                        <button class="btn btn-success mb-3">Registrar</button>
+                        <button class="btn btn-primary mb-3">Registrar</button>
                     </div>
                 </form>
             </div>
             <div class="col-4 col-md-4">
-                <h4>Tipos de Suscripción</h4>
-                <div class="card bg-dark">
+                <h3>Tarjetas</h3>
+                <div class="card">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between">
                             <div class="d-flex flex-column">
@@ -71,7 +67,7 @@
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <div class="d-flex flex-column">
-                                <span>Suscripción Basica</span>
+                                <span>Suscripción Basic</span>
                                 <small class="text-muted">Accesos a contenido</small>
                             </div>
                             <div>
@@ -80,7 +76,7 @@
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <div class="d-flex flex-column">
-                                <span>Suscripción Experta</span>
+                                <span>Suscripción Expert</span>
                                 <small class="text-muted">Accesos ilimitados</small>
                             </div>
                             <div>

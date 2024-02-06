@@ -25,7 +25,7 @@ contenedor.append(subtitulo, imagen);
 // 13- AGREGO CONSTRUCTOR
 const autor = {
   nombre: "Steve Garlic",
-  email: "stevepremier@mail.com",
+  correo: "stevepremier@mail.com",
   suscripcion: "Suscripcion Free",
   descripcion:
     "Fanático de la tecnología y profesor de las artes de programación con javascript",
@@ -77,7 +77,7 @@ const crearTarjeta = () => {
 
     // 23- LLAMO A LA CONSTANTE AUTOR
     autor.nombre = nombre;
-    autor.email = email;
+    autor.email = nombre;
     autor.suscripcion = suscripcion;
     autor.descripcion = descripcion;
 
