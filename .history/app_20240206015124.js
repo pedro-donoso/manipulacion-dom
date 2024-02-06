@@ -61,5 +61,4 @@ let tarjetaAutor = ` <div class="card" style="width: 18rem;">
         console.log(event);
     }
 
-    // 19- CAPTURO EVENTO CLIC DEL BOTON EN EL form MEDIANTE EL ID formulario
-    document.getElementById('formulario').addEventListener('submit',modificarAutor)
+    19- CAPTURO 
