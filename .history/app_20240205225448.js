@@ -2,7 +2,7 @@
 let contenedor = document.querySelector("#contenedor");
 
 // 3- CREAR ELEMENTO SUBTITULO Y LE AGREGO PROPIEDADES
-let subtitulo = document.createElement("h2");
+let subtitulo = document.createElement("h3");
 subtitulo.innerText = "Árbol de nodos";
 
 // 4- OBTENER EL CUERPO DEL DOCUMENTO
@@ -14,9 +14,8 @@ body.appendChild(subtitulo);
 // 6- AGREGO IMAGEN
 let imagen = document.createElement("img");
 imagen.src="https://www.freecodecamp.org/news/content/images/2021/09/Document.jpg";
-imagen.width="400";
+imagen.width="300";
 imagen.alt="árbol de nodos";
 
-// 7- AGREGO ELEMENTOS AL CONTENEDOR
-contenedor.append(subtitulo,imagen)
+contenedor.append(subtitulo, )
 

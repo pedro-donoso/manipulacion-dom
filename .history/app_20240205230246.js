@@ -2,7 +2,7 @@
 let contenedor = document.querySelector("#contenedor");
 
 // 3- CREAR ELEMENTO SUBTITULO Y LE AGREGO PROPIEDADES
-let subtitulo = document.createElement("h2");
+let subtitulo = document.createElement("h1");
 subtitulo.innerText = "Árbol de nodos";
 
 // 4- OBTENER EL CUERPO DEL DOCUMENTO
