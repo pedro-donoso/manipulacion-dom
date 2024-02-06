@@ -25,8 +25,8 @@ contenedor.append(subtitulo, imagen);
 // 13- AGREGO CONSTRUCTOR
 const autor = {
   nombre: "Steve Garlic",
-  email: "stevepremier@mail.com",
-  suscripcion: "Suscripcion Free",
+  usuario: "",
+  suscripcion: "suscripcion free",
   descripcion:
     "Fanático de la tecnología y profesor de las artes de programación con javascript",
   imagen: "./img/icono.jpg"
@@ -48,9 +48,9 @@ const crearTarjeta = () => {
   let tarjetaAutor = ` <div class="card" style="width: 18rem;">
         <img class="card-img-top pt-2 w-75" src="${autor.imagen}" alt="Card image cap">
         <div class="card-body">
+        <h4 class="card-title">${autor.usuario}</h4>
             <h5 class="card-title">${autor.nombre}</h5>
-            <p class="text-muted">${autor.email}</p>
-             <p class="card-text">${autor.suscripcion}</p>
+             <p class="text-muted">${autor.suscripcion}</p>
             <p class="card-text">${autor.descripcion}</p>
            
             <button class="btn btn-primary" onclick="eventoClick(event)">Ver Perfil</button>
@@ -71,14 +71,14 @@ const crearTarjeta = () => {
 
     // 22- CAPTURO CAMPOS DEL FORMULARIO
     let nombre = document.querySelector("#nombre").value;
-    let email = document.querySelector("#email").value;
+    let usuario = document.querySelector("#usuario").value;
     let suscripcion = document.querySelector("#suscripcion").value;
      let descripcion = document.querySelector("#descripcion").value;
 
     // 23- LLAMO A LA CONSTANTE AUTOR
     autor.nombre = nombre;
+    autor.usuario = usuario;
     autor.email = email;
-    autor.suscripcion = suscripcion;
     autor.descripcion = descripcion;
 
     // 24- SE VUELVE A CREAR LA TARJETA CON LOS NUEVOS DATOS

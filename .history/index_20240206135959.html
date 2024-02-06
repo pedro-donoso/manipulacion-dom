@@ -16,49 +16,41 @@
 <body>
 
     <main class="container">
-
+        
         <!-- 1- AGREGO CLASE container PARA MANIPULAR ESTE PÁRRAFO -->
-        <div class="row mt-5 text-center justify-content-between" id="contenedor">
+        <div class="row mt-5 text-center" id="contenedor">
             <div class="col-4 col-md-4">
-                <h2>Manipulación del DOM</h2>
-                <p class="text-center">
-                    El DOM es una API definida para representar e interactuar con cualquier documento HTML.
-                    El DOM es un modelo de documento que se carga en el navegador web y que representa el documento como
-                    un árbol de
+                <h1>Manipulación del DOM</h1>
+                <p>
+                    El DOM es una API definida para representar e interactuar con cualquier documento HTML. El DOM es un
+                    modelo de documento que se carga en el navegador web y que representa el documento como un árbol de
                     nodos, en donde cada nodo representa una parte del documento (puede tratarse de un elemento, una
                     cadena de texto o un comentario)
                 </p>
             </div>
         </div>
-        <div class="row justify-content-between pb-5">
-            <div class="col-4 col-md-4 bg-warning rounded p-4">
-                <h5><strong>Cambia los datos de la Tarjeta</strong></h5>
+        <div class="row">
+            <div class="col-4 col-md-6">
+                <h3>Formulario</h3>
                 <!-- 15- AGREGO id PARA ESCUCHAR EVENTO CLICK -->
                 <form id="formulario">
                     <!-- 21- AGREGO ID DE CADA CAMPO -->
-                    <label class="pt-2">Tipo de Suscripción:</label>
-                    <select id="suscripcion" class="form-control mb-3">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="Suscripción Free">Suscripción Free</option>
-                        <option value="Suscripción Basica">Suscripcion Basica</option>
-                        <option value="Suscripción Experta">Suscripcion Experta</option>
-                    </select>
-                    <label>Nombre:</label>
-                    <input type="text" class="form-control mb-3" id="nombre" required>
-
-                    <label>Correo: (opcional)</label>
+                    <label>Nombre</label>
+                    <input type="text" class="form-control mb-3" id="nombre">
+                    <label>Usuario</label>
+                    <input type="text" class="form-control mb-3" id="usuario">
+                    <label>Email</label>
                     <input type="email" class="form-control mb-3" id="email">
-                    
-                    <label>Descripcion:</label>
-                    <textarea rows="3" class="form-control mb-3" id="descripcion" required></textarea>
+                    <label>Descripcion</label>
+                    <textarea rows="3" class="form-control mb-3" id="descripcion"></textarea>
                     <div>
-                        <button class="btn btn-success mb-3">Registrar</button>
+                        <button class="btn btn-primary mb-3">Registrar</button>
                     </div>
                 </form>
             </div>
-            <div class="col-4 col-md-4">
-                <h4>Tipos de Suscripción</h4>
-                <div class="card bg-dark">
+            <div class="col-4 col-md-6">
+                <h3>Tarjetas</h3>
+                <div class="card">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between">
                             <div class="d-flex flex-column">
@@ -71,16 +63,16 @@
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <div class="d-flex flex-column">
-                                <span>Suscripción Basica</span>
+                                <span>Suscripción Basic</span>
                                 <small class="text-muted">Accesos a contenido</small>
                             </div>
                             <div>
                                 <span class="text-muted">$600</span>
                             </div>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between">
+                        <li class="list-group-item d-flex">
                             <div class="d-flex flex-column">
-                                <span>Suscripción Experta</span>
+                                <span>Suscripción Expert</span>
                                 <small class="text-muted">Accesos ilimitados</small>
                             </div>
                             <div>
@@ -90,15 +82,12 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- 8- AGREGO CARD -->
-            <!-- 13- AGREGO ID PARA CAPTURAR CONTENEDOR -->
-            <div class="row" id="contenedor_tarjeta">
-
-            </div>
-
         </div>
-
+        <!-- 8- AGREGO CARD -->
+        <!-- 13- AGREGO ID PARA CAPTURAR CONTENEDOR -->
+        <div class="row" id="contenedor_tarjeta">
+            
+        </div>
     </main>
 
     <!-- Optional JavaScript -->
@@ -117,3 +106,6 @@
 </body>
 
 </html>
+
+
+

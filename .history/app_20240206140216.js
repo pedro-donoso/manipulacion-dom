@@ -2,8 +2,8 @@
 let contenedor = document.querySelector("#contenedor");
 
 // 3- CREAR ELEMENTO SUBTITULO Y LE AGREGO PROPIEDADES
-let subtitulo = document.createElement("h4");
-subtitulo.innerText = "Árbol de nodos \n (enviado desde JavaScript)";
+let subtitulo = document.createElement("h3");
+subtitulo.innerText = "Árbol de nodos";
 
 // 4- OBTENER EL CUERPO DEL DOCUMENTO
 let body = document.body;
@@ -15,7 +15,7 @@ body.appendChild(subtitulo);
 let imagen = document.createElement("img");
 imagen.src =
   "https://www.freecodecamp.org/news/content/images/2021/09/Document.jpg";
-imagen.width = "450";
+imagen.width = "400";
 imagen.height = "300";
 imagen.alt = "árbol de nodos";
 
@@ -25,11 +25,12 @@ contenedor.append(subtitulo, imagen);
 // 13- AGREGO CONSTRUCTOR
 const autor = {
   nombre: "Steve Garlic",
-  email: "stevepremier@mail.com",
-  suscripcion: "Suscripcion Free",
+  usuario: "",
+  email: "stevewinner@outlook.com",
   descripcion:
     "Fanático de la tecnología y profesor de las artes de programación con javascript",
-  imagen: "./img/icono.jpg"
+  imagen: "./img/icono.jpg",
+  imagen.wi
 };
 
 // 19- Agrego const crearTarjeta y agrego todas las funciones del código
@@ -46,13 +47,12 @@ const crearTarjeta = () => {
   // 17- CREO EVENTO onclick
   // 19- LLAMAR A eventoClick CON event
   let tarjetaAutor = ` <div class="card" style="width: 18rem;">
-        <img class="card-img-top pt-2 w-75" src="${autor.imagen}" alt="Card image cap">
+        <img class="card-img-top pt-2" src="${autor.imagen}" alt="Card image cap">
         <div class="card-body">
+        <h4 class="card-title">${autor.usuario}</h4>
             <h5 class="card-title">${autor.nombre}</h5>
-            <p class="text-muted">${autor.email}</p>
-             <p class="card-text">${autor.suscripcion}</p>
             <p class="card-text">${autor.descripcion}</p>
-           
+            <p class="text-muted">${autor.email}</p>
             <button class="btn btn-primary" onclick="eventoClick(event)">Ver Perfil</button>
         </div>
     </div>`;
@@ -71,14 +71,14 @@ const crearTarjeta = () => {
 
     // 22- CAPTURO CAMPOS DEL FORMULARIO
     let nombre = document.querySelector("#nombre").value;
+    let usuario = document.querySelector("#usuario").value;
     let email = document.querySelector("#email").value;
-    let suscripcion = document.querySelector("#suscripcion").value;
      let descripcion = document.querySelector("#descripcion").value;
 
     // 23- LLAMO A LA CONSTANTE AUTOR
     autor.nombre = nombre;
+    autor.usuario = usuario;
     autor.email = email;
-    autor.suscripcion = suscripcion;
     autor.descripcion = descripcion;
 
     // 24- SE VUELVE A CREAR LA TARJETA CON LOS NUEVOS DATOS

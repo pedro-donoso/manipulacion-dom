@@ -25,7 +25,7 @@ contenedor.append(subtitulo, imagen);
 // 13- AGREGO CONSTRUCTOR
 const autor = {
   nombre: "Steve Garlic",
-  email: "stevepremier@mail.com",
+  correo: "stevepremier@mail.com",
   suscripcion: "Suscripcion Free",
   descripcion:
     "Fanático de la tecnología y profesor de las artes de programación con javascript",
@@ -71,13 +71,11 @@ const crearTarjeta = () => {
 
     // 22- CAPTURO CAMPOS DEL FORMULARIO
     let nombre = document.querySelector("#nombre").value;
-    let email = document.querySelector("#email").value;
     let suscripcion = document.querySelector("#suscripcion").value;
      let descripcion = document.querySelector("#descripcion").value;
 
     // 23- LLAMO A LA CONSTANTE AUTOR
     autor.nombre = nombre;
-    autor.email = email;
     autor.suscripcion = suscripcion;
     autor.descripcion = descripcion;
 
