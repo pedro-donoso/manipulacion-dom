@@ -29,7 +29,7 @@ const autor = {
   suscripcion: "Suscripcion Free",
   descripcion:
     "Fanático de la tecnología y profesor de las artes de programación con javascript",
-  imagen: "./img/icono.jpg",
+  imagen: "./img/icono.jpg"
 };
 
 // 19- Agrego const crearTarjeta y agrego todas las funciones del código
@@ -45,13 +45,15 @@ const crearTarjeta = () => {
   // 14- AGREGO DATOS DEL CONSTRUCTOR (13)
   // 17- CREO EVENTO onclick
   // 19- LLAMAR A eventoClick CON event
-  let tarjetaAutor = ` <div class="card bg-success text-center" style="width: 18rem;">
-        <img class="card-img-top p-3" src="${autor.imagen}" alt="Card image cap">
+  let tarjetaAutor = ` <div class="card" style="width: 18rem;">
+        <img class="card-img-top pt-2 w-75" src="${autor.imagen}" alt="Card image cap">
         <div class="card-body">
-            <h4 class="card-title">${autor.nombre}</h5>
-            <p class="card-text">${autor.suscripcion}</p>
+            <h5 class="card-title">${autor.nombre}</h5>
+            <p class="text-muted">${autor.email}</p>
+             <p class="card-text">${autor.suscripcion}</p>
             <p class="card-text">${autor.descripcion}</p>
-            <p class="card-text">${autor.email}</p>
+           
+            <button class="btn btn-primary" onclick="eventoClick(event)">Ver Perfil</button>
         </div>
     </div>`;
 
@@ -63,38 +65,38 @@ const crearTarjeta = () => {
 };
 
 // 16- Creo constante modificarAutor para agregarla al form en index.html, la función recibirá un evento
-const modificarAutor = (event) => {
-  console.log(event);
-  event.preventDefault();
+  const modificarAutor= (event) => {
+    console.log(event);
+    event.preventDefault();
 
-  // 22- CAPTURO CAMPOS DEL FORMULARIO
-  let nombre = document.querySelector("#nombre").value;
-  let email = document.querySelector("#email").value;
-  let suscripcion = document.querySelector("#suscripcion").value;
-  let descripcion = document.querySelector("#descripcion").value;
+    // 22- CAPTURO CAMPOS DEL FORMULARIO
+    let nombre = document.querySelector("#nombre").value;
+    let email = document.querySelector("#email").value;
+    let suscripcion = document.querySelector("#suscripcion").value;
+     let descripcion = document.querySelector("#descripcion").value;
 
-  // 23- LLAMO A LA CONSTANTE AUTOR
-  autor.nombre = nombre;
-  autor.email = email;
-  autor.suscripcion = suscripcion;
-  autor.descripcion = descripcion;
+    // 23- LLAMO A LA CONSTANTE AUTOR
+    autor.nombre = nombre;
+    autor.email = email;
+    autor.suscripcion = suscripcion;
+    autor.descripcion = descripcion;
 
-  // 24- SE VUELVE A CREAR LA TARJETA CON LOS NUEVOS DATOS
-  crearTarjeta();
+    // 24- SE VUELVE A CREAR LA TARJETA CON LOS NUEVOS DATOS
+    crearTarjeta();
 
-  // 26- LLAMO A FUNCION LIMPIAR FORMULARIO
-  limpiarFormulario();
-};
+    // 25- CREO FUNCION LIMPIAR FORMULARIO
+    limpiarFormulario()
 
-// 25- CREO FUNCION LIMPIAR FORMULARIO CON COMANDO RESET
-const limpiarFormulario = () => {
-  document.getElementById("formulario").reset();
-};
+  };
+
+
+  const limpiarFormulario=()=>{
+    
+  }
+
 
 // 18- CAPTURO EVENTO CLIC DEL BOTON EN EL form MEDIANTE EL ID formulario
-document
-  .getElementById("formulario")
-  .addEventListener("submit", modificarAutor);
+document.getElementById("formulario").addEventListener("submit",modificarAutor);
 
 // 20- LLAMO A LA FUNCIÓN
 crearTarjeta();

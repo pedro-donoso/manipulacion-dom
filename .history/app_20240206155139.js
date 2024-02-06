@@ -45,13 +45,13 @@ const crearTarjeta = () => {
   // 14- AGREGO DATOS DEL CONSTRUCTOR (13)
   // 17- CREO EVENTO onclick
   // 19- LLAMAR A eventoClick CON event
-  let tarjetaAutor = ` <div class="card bg-success text-center" style="width: 18rem;">
-        <img class="card-img-top p-3" src="${autor.imagen}" alt="Card image cap">
+  let tarjetaAutor = ` <div class="card bg-success" style="width: 18rem;">
+        <img class="card-img-top p-3 w-100" src="${autor.imagen}" alt="Card image cap">
         <div class="card-body">
             <h4 class="card-title">${autor.nombre}</h5>
             <p class="card-text">${autor.suscripcion}</p>
+            <p class="text-muted">${autor.email}</p>
             <p class="card-text">${autor.descripcion}</p>
-            <p class="card-text">${autor.email}</p>
         </div>
     </div>`;
 
