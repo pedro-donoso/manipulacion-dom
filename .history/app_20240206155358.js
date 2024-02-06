@@ -51,7 +51,7 @@ const crearTarjeta = () => {
             <h4 class="card-title">${autor.nombre}</h5>
             <p class="card-text">${autor.suscripcion}</p>
             <p class="card-text">${autor.descripcion}</p>
-            <p class="card-text">${autor.email}</p>
+            <strong><p class="card-text">${autor.email}</p></strong>
         </div>
     </div>`;
 
