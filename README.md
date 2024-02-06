@@ -1,4 +1,5 @@
 ## https://manipulacion-dom.netlify.app/
 
-![captura](https://github.com/pedro-donoso/manipulacion-dom/assets/68760595/033e8614-252b-4577-9459-d24269b1ebaf)
+![bg](https://github.com/pedro-donoso/manipulacion-dom/assets/68760595/41d44800-02ff-4e6c-a6e2-fc4f863cfc43)
+
 
